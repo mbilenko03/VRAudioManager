@@ -51,7 +51,9 @@ namespace VRAudioManager
 
         private string[] GetProcesses()
         {
-            return richTextBox1.Text.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            string processes = richTextBox1.Text;
+            processes = processes.Replace("\n", " ");
+            return processes.Split(' ');
         }
 
         private void switchVR()
