@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace VRAudioManager.AudioManaging
 {
@@ -17,6 +12,21 @@ namespace VRAudioManager.AudioManaging
             ProcessStartInfo theProcess = new ProcessStartInfo(BatchPath, string.Format("\"{0}\" \"{1}\"", Input, Output));
             theProcess.WindowStyle = ProcessWindowStyle.Hidden;
             Process.Start(theProcess);
+        }
+
+        static public bool IsAnyProcessRuning(string[] processes)
+        {
+            bool anyProcessRunning = false;
+
+            foreach (string element in processes)
+            {
+                var p = Process.GetProcessesByName(element);
+
+                if (p.Length > 0)
+                    anyProcessRunning = true;
+            }
+
+            return anyProcessRunning;
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.defaultAudio = new System.Windows.Forms.TextBox();
@@ -41,12 +42,12 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.keyBind = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.autoToggle = new System.Windows.Forms.CheckBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.toggleDefault = new System.Windows.Forms.Button();
+            this.Default = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.VR = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -128,7 +129,6 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Microphone";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -151,7 +151,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Audio";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -186,27 +185,6 @@
             this.label5.Size = new System.Drawing.Size(49, 13);
             this.label5.TabIndex = 1;
             this.label5.Text = "Key Bind";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(21, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Debug";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(711, 47);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "VR";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.toggleVR);
             // 
             // autoToggle
             // 
@@ -217,6 +195,7 @@
             this.autoToggle.TabIndex = 4;
             this.autoToggle.Text = "Auto Toggle";
             this.autoToggle.UseVisualStyleBackColor = true;
+            this.autoToggle.CheckedChanged += new System.EventHandler(this.autoToggle_CheckedChanged);
             // 
             // richTextBox1
             // 
@@ -235,29 +214,42 @@
             this.label6.Size = new System.Drawing.Size(64, 13);
             this.label6.TabIndex = 6;
             this.label6.Text = "Process List";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // toggleDefault
+            // Default
             // 
-            this.toggleDefault.Location = new System.Drawing.Point(623, 47);
-            this.toggleDefault.Name = "toggleDefault";
-            this.toggleDefault.Size = new System.Drawing.Size(75, 23);
-            this.toggleDefault.TabIndex = 7;
-            this.toggleDefault.Text = "Default";
-            this.toggleDefault.UseVisualStyleBackColor = true;
-            this.toggleDefault.Click += new System.EventHandler(this.toggleDefault_Click);
+            this.Default.Location = new System.Drawing.Point(630, 47);
+            this.Default.Name = "Default";
+            this.Default.Size = new System.Drawing.Size(75, 23);
+            this.Default.TabIndex = 7;
+            this.Default.Text = "Default";
+            this.Default.UseVisualStyleBackColor = true;
+            this.Default.Click += new System.EventHandler(this.Default_Click);
+            // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // VR
+            // 
+            this.VR.Location = new System.Drawing.Point(711, 47);
+            this.VR.Name = "VR";
+            this.VR.Size = new System.Drawing.Size(75, 23);
+            this.VR.TabIndex = 8;
+            this.VR.Text = "VR";
+            this.VR.UseVisualStyleBackColor = true;
+            this.VR.Click += new System.EventHandler(this.VR_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 434);
-            this.Controls.Add(this.toggleDefault);
+            this.Controls.Add(this.VR);
+            this.Controls.Add(this.Default);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.autoToggle);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -286,11 +278,11 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TextBox keyBind;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox autoToggle;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button toggleDefault;
+        private System.Windows.Forms.Button Default;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Button VR;
     }
 }

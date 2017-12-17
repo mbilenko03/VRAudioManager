@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using VRAudioManager.AudioManaging;
 
@@ -19,67 +12,54 @@ namespace VRAudioManager
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void keyBind_KeyDown(object sender, KeyEventArgs e)
         {
             keyBind.Text = e.KeyCode.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var p = Process.GetProcessesByName("notepad");
-
-            if (p.Length > 0)
-                Debug.WriteLine($"Notepad.exe is detected. Process count: {p.Length}");
-            else
-                Debug.WriteLine("Notepad.exe is not detected :(");
-        }
-
         private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
+        {        
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void Default_Click(object sender, EventArgs e)
         {
-
+            switchDefault();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void VR_Click(object sender, EventArgs e)
         {
-
+            switchVR();
         }
 
-        private void toggleVR(object sender, EventArgs e)
+        private void autoToggle_CheckedChanged(object sender, EventArgs e)
+        {
+            if (autoToggle.Checked)
+                timer.Enabled = true;
+            else
+                timer.Enabled = false;
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            bool isProcessRunning = SwitchAudio.IsAnyProcessRuning(GetProcesses());
+
+            if (isProcessRunning)
+                switchVR();
+            else
+                switchDefault();
+        }
+
+        private string[] GetProcesses()
+        {
+            return richTextBox1.Text.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+        }
+
+        private void switchVR()
         {
             SwitchAudio.SwitchDevice(VRAudio.Text, VRMicrophone.Text);
         }
 
-        private void toggleDefault_Click(object sender, EventArgs e)
+        private void switchDefault()
         {
             SwitchAudio.SwitchDevice(defaultAudio.Text, defaultMicrophone.Text);
         }
