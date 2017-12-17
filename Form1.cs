@@ -59,11 +59,18 @@ namespace VRAudioManager
         private void switchVR()
         {
             SwitchAudio.SwitchDevice(VRAudio.Text, VRMicrophone.Text);
+            currentSetting.Text = "VR";
         }
 
         private void switchDefault()
         {
             SwitchAudio.SwitchDevice(defaultAudio.Text, defaultMicrophone.Text);
+            currentSetting.Text = "Default";
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
