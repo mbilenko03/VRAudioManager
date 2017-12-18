@@ -19,8 +19,10 @@ Manages the audio devices based on user settings to better switch between audio 
 
 <a href="https://msdn.microsoft.com/en-us/library/system.diagnostics.process.processname(v=vs.110).aspx">serviceName</a></p>
 
+<ul>
 <li>The settings will be switched to VR when any service from the list is started.</li>
 <li>The setting will be switched back to default when no services from the list are open.</li>
+</ul>
 
 </li>
 <li>
