@@ -21,7 +21,8 @@ Manages the audio devices based on user settings to better switch between audio 
 <hr>
 <h2>Upcoming Features</h2>
 <ul>
-<li> . </li>
-<li> . </li>
+<li>Hotkeys for toggling settings</li>
+<li>Option to add program to startup</li>
+<li>Easy way to add services by the location of the exe file</li>
 </ul>
 <hr>
