@@ -15,13 +15,14 @@ Manages the audio devices based on user settings to better switch between audio 
 </li>
 <li>
 <h3>Adding services to auto toggle</h3>
-<p>Service names can be used to auto toggle the audio settings when that particular service is started. To add multiple services, place each individual service on its own line. It will auto save to a text file when the app is closed. To find the service name of an application, find the name of the executable file (.exe file) and use the name excluding the extension (.exe).                       
+<p>Service names can be used to auto toggle the audio settings when that particular service is started. To add multiple services, place each individual service on its own line. It will auto save to a text file when the app is closed. To find the service name of an application, find the name of the executable file (.exe file) and use the name excluding the extension (.exe).                      
 
 <a href="https://msdn.microsoft.com/en-us/library/system.diagnostics.process.processname(v=vs.110).aspx">serviceName</a></p>
 
 <ul>
 <li>The settings will be switched to VR when any service from the list is started.</li>
 <li>The setting will be switched back to default when no services from the list are open.</li>
+<li>Auto toggle will only be enabled when the auto toggle checkbox is selected.</li>
 </ul>
 
 </li>
