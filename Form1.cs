@@ -52,8 +52,8 @@ namespace VRAudioManager
         private string[] GetProcesses()
         {
             string processes = richTextBox1.Text;
-            processes = processes.Replace("\n", " ");
-            return processes.Split(' ');
+            processes = processes.Replace("\n", "=");
+            return processes.Split('=');
         }
 
         private void switchVR()
@@ -71,6 +71,40 @@ namespace VRAudioManager
         private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                Hide();
+                notifyIcon1.Visible = true;
+            } 
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Normal;
+            notifyIcon1.Visible = false;
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            InfoManager.SaveInfo(defaultAudio.Text, defaultMicrophone.Text, VRAudio.Text, VRMicrophone.Text, GetProcesses());
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            InfoManager.GetInfo(out string defaultAudio, out string defaultMicrophone, out string VRAudio,
+                out string VRMicrophone, out string[] processesArray);
+
+            this.defaultAudio.Text = defaultAudio;
+            this.defaultMicrophone.Text = defaultMicrophone;
+            this.VRAudio.Text = VRAudio;
+            this.VRMicrophone.Text = VRMicrophone;
+
+            richTextBox1.Text = string.Join("\n  ",processesArray);
         }
     }
 }
