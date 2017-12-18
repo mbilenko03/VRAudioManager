@@ -8,3 +8,4 @@ D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioMana
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.pdb
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.csprojResolveAssemblyReference.cache
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.Form1.resources
+D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\bin\Debug\Gma.System.MouseKeyHook.dll

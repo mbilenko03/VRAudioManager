@@ -5,8 +5,6 @@ namespace VRAudioManager
 {
     static class Program
     {
-        private IKeyboardMouseEvents m_GlobalHook;
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

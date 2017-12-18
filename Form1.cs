@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gma.System.MouseKeyHook;
+using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 using VRAudioManager.AudioManaging;
@@ -9,16 +10,12 @@ namespace VRAudioManager
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();       
         }
 
         private void keyBind_KeyDown(object sender, KeyEventArgs e)
         {
             keyBind.Text = e.KeyCode.ToString();
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {        
         }
 
         private void Default_Click(object sender, EventArgs e)
@@ -66,11 +63,6 @@ namespace VRAudioManager
         {
             SwitchAudio.SwitchDevice(defaultAudio.Text, defaultMicrophone.Text);
             currentSetting.Text = "Default";
-        }
-
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void Form1_Resize(object sender, EventArgs e)
