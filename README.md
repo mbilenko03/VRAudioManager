@@ -1,7 +1,6 @@
 # VRAudioManager
 Manages the audio devices based on user settings to better switch between audio and microphone sources when playing VR games.
 
-<h2>This project was based on <a href=""></a></h2>
 <h2>What is this Project</h2>
 <p></p>
 <hr>
