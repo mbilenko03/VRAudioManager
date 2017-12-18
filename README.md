@@ -10,9 +10,15 @@ Manages the audio devices based on user settings to better switch between audio 
 <li>
 <h3>Adding audio and microphone devices</h3>
 </li>
-<li> . </li>
-<li> . </li>
-<li> . </li>
+<li>
+<h3>Manual switching between devices</h3>
+</li>
+<li>
+<h3>Adding services to auto toggle</h3>
+</li>
+<li>
+<h3>General usage</h3>
+</li>
 </ol>
 <hr>
 <h2>Releases</h2>
