@@ -7,7 +7,9 @@ Manages the audio devices based on user settings to better switch between audio 
 <h2>Usage</h2>
 <p></p>
 <ol>
-<li> . </li>
+<li>
+<h3>Adding audio and microphone devices</h3>
+</li>
 <li> . </li>
 <li> . </li>
 <li> . </li>
