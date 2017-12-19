@@ -9,6 +9,9 @@ Manages the audio devices based on user settings to better switch between audio 
 <ol>
 <li>
 <h3>Adding audio and microphone devices</h3>
+<p>
+  
+</p>
 </li>
 <li>
 <h3>Manual switching between devices</h3>
