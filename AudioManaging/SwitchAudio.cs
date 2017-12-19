@@ -5,7 +5,7 @@ namespace VRAudioManager.AudioManaging
 {
     class SwitchAudio
     {
-        private static string BatchPath = Path.GetFullPath("~\\..\\..\\..\\RunningFiles\\audio.bat");        
+        private static string BatchPath = Path.GetFullPath("~\\..\\audio.bat");        
 
         static public void SwitchDevice(string Input, string Output)
         {
