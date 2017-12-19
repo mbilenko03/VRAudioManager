@@ -1,6 +1,4 @@
-﻿using Gma.System.MouseKeyHook;
-using System;
-using System.Diagnostics;
+﻿using System;
 using System.Windows.Forms;
 using VRAudioManager.AudioManaging;
 

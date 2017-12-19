@@ -1,11 +1,11 @@
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\bin\Debug\VRAudioManager.exe.config
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\bin\Debug\VRAudioManager.exe
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\bin\Debug\VRAudioManager.pdb
+D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\bin\Debug\Gma.System.MouseKeyHook.dll
+D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.Form1.resources
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.Properties.Resources.resources
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.csproj.GenerateResource.Cache
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.csproj.CoreCompileInputs.cache
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.exe
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.pdb
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.csprojResolveAssemblyReference.cache
-D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.Form1.resources
-D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\bin\Debug\Gma.System.MouseKeyHook.dll
