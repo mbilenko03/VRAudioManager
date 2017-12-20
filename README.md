@@ -17,8 +17,7 @@ Check your input and output devices for the correct name. It should be the first
 <br></br>
 <img src="Images/input.PNG">
 <img src="Images/output.PNG">
-<br></br>
-If you want to rename the device, either for easy input or the fact that the name is repeated, follow these steps:
+<br></br>If you want to rename the device, either for easy input or the fact that the name is repeated, follow these steps:
 <br></br>
 <img src="Images/properties.PNG">
 <img src="Images/rename.PNG">
@@ -59,7 +58,7 @@ Manual switching is fairly easy to do.
 </ul>
 <hr>
 <h2>Upcoming Features</h2>
-<h1>In order of priority:</h1>
+<h4>In order of priority:</h4>
 <ul>
 <li>Adding ability to remember checkbox field settings</li>
 <li>Option to add program to startup</li>
