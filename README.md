@@ -59,7 +59,9 @@ Manual switching is fairly easy to do.
 </ul>
 <hr>
 <h2>Upcoming Features</h2>
+<h1>In order of priority:</h1>
 <ul>
+<li>Adding ability to remember checkbox field settings</li>
 <li>Option to add program to startup</li>
 <li>Easy way to add services by the location of the exe file</li>
 <li>Hotkeys for toggling settings</li>
