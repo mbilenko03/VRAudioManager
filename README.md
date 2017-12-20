@@ -9,13 +9,15 @@ Manages the audio devices based on user settings to better switch between audio 
 <ol>
 <li>
 <h3>Adding audio and microphone devices</h3>
-<p>
-  
+
 </p>
 </li>
 <li>
 <h3>Manual switching between devices</h3>
-<p>Manual switching is fairly easy to do.</p>
+<p>
+Manual switching is fairly easy to do.
+![Manual Switch](https://github.com/mbilenko03/VRAudioManager/blob/master/Images/ManualSwitch.PNG) 
+</p>
 </li>
 <li>
 <h3>Adding services to auto toggle</h3>
