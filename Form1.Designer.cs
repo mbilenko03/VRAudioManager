@@ -52,6 +52,8 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.startUp = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -288,11 +290,35 @@
             this.notifyIcon1.Text = "notifyIcon";
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(802, 412);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(35, 13);
+            this.linkLabel1.TabIndex = 11;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "About";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // startUp
+            // 
+            this.startUp.AutoSize = true;
+            this.startUp.Location = new System.Drawing.Point(12, 12);
+            this.startUp.Name = "startUp";
+            this.startUp.Size = new System.Drawing.Size(129, 17);
+            this.startUp.TabIndex = 12;
+            this.startUp.Text = "Startup with Windows";
+            this.startUp.UseVisualStyleBackColor = true;
+            this.startUp.CheckedChanged += new System.EventHandler(this.startUp_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 434);
+            this.Controls.Add(this.startUp);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.VR);
             this.Controls.Add(this.Default);
@@ -342,5 +368,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.CheckBox startUp;
     }
 }

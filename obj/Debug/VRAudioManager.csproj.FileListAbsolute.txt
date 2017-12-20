@@ -9,3 +9,5 @@ D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioMana
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.exe
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.pdb
 D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.csprojResolveAssemblyReference.cache
+D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Programming\Visual Studio\VRAudioManager\VRAudioManager\obj\Debug\VRAudioManager.csproj.ResolveComReference.cache
