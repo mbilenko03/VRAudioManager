@@ -8,6 +8,23 @@ Manages the audio devices based on user settings to better switch between audio 
 <ol>
 <li>
 <h3>Adding audio and microphone devices</h3>
+<p>
+In order to set up the output and input devices, the correct text must be placed in the fields:
+<br></br>
+<img src="Images/addingaudandmic.PNG">
+<br></br>
+Check your input and output devices for the correct name. It should be the first row that comes up for each device in playback and recording devices menu: 
+<br></br>
+<img src="Images/input.PNG">
+<img src="Images/output.PNG">
+<br></br>
+If you want to rename the device, either for easy input or the fact that the name is repeated, follow these steps:
+<br></br>
+<img src="Images/properties.PNG">
+<img src="Images/rename.PNG">
+<br></br>
+This should be the text that you need to input in the text fields.
+</p>
 </li>
 <li>
 <h3>Manual switching between devices</h3>
