@@ -61,9 +61,10 @@ namespace VRAudioManager
         {
             bool isProcessRunning = SwitchAudio.IsAnyProcessRuning(GetProcesses());
 
-            if (isProcessRunning)
+            //Don't need constant switch
+            if (isProcessRunning && currentSetting.Text != "VR")
                 switchVR();
-            else
+            else if (!isProcessRunning && currentSetting.Text != "Default")
                 switchDefault();
         }
 
