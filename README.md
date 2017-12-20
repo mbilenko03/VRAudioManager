@@ -16,7 +16,7 @@ Manages the audio devices based on user settings to better switch between audio 
 <h3>Manual switching between devices</h3>
 <p>
 Manual switching is fairly easy to do.
-
+<br></br>
 <img src="Images/ManualSwitch.PNG">
 </p>
 </li>
