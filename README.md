@@ -55,6 +55,7 @@ Manual switching is fairly easy to do.
 <ul>
 <li><a href="https://github.com/mbilenko03/VRAudioManager/releases">All Releases</a></li>
 <li><a href="https://github.com/mbilenko03/VRAudioManager/releases/tag/v1.0">Version 1.0</a></li>
+<li><a href="https://github.com/mbilenko03/VRAudioManager/releases/tag/v1.1">Version 1.1</a></li>
 </ul>
 <hr>
 <h2>Upcoming Features</h2>
