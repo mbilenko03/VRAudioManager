@@ -35,7 +35,7 @@ Manual switching is fairly easy to do.
 </li>
 <li>
 <h3>Adding services to auto toggle</h3>
-<p>Service names can be used to auto toggle the audio settings when that particular service is started. To add multiple services, place each individual service on its own line. It will auto save to a text file when the app is closed. To find the service name of an application, find the name of the executable file (.exe file) and use the name excluding the extension (.exe).                      
+<p><b>You can now use the file browser to easily add services; however, if you want to understand more, read on.</b> Service names can be used to auto toggle the audio settings when that particular service is started. To add multiple services, place each individual service on its own line. It will auto save to a text file when the app is closed. To find the service name of an application, find the name of the executable file (.exe file) and use the name excluding the extension (.exe).                      
 
 <a href="https://msdn.microsoft.com/en-us/library/system.diagnostics.process.processname(v=vs.110).aspx">serviceName</a></p>
 
@@ -54,17 +54,13 @@ Manual switching is fairly easy to do.
 <h2>Releases</h2>
 <ul>
 <li><a href="https://github.com/mbilenko03/VRAudioManager/releases">All Releases</a></li>
-<li><a href="https://github.com/mbilenko03/VRAudioManager/releases/tag/v1.1.1">Version 1.1.1</a></li>
-<li><a href="https://github.com/mbilenko03/VRAudioManager/releases/tag/v1.1">Version 1.1</a></li>
-<li><a href="https://github.com/mbilenko03/VRAudioManager/releases/tag/v1.0">Version 1.0</a></li>
-
-
+<li><a href="https://github.com/mbilenko03/VRAudioManager/releases/tag/v1.1.3">Latest Release</a></li>
 </ul>
 <hr>
 <h2>Upcoming Features</h2>
 <h4>In order of priority:</h4>
 <ul>
-<li>Easy way to add services by the location of the exe file</li>
+<li>Context menu for tray app</li>
 <li>Hotkeys for toggling settings</li>
 </ul>
 <hr>
