@@ -1,5 +1,6 @@
 ﻿using IWshRuntimeLibrary;
 using System;
+using System.Windows;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
@@ -27,12 +28,43 @@ namespace VRAudioManager
 
             richTextBox1.Text = string.Join("\n  ", processesArray);
 
+            ContextMenu contextMenu = new ContextMenu();
+            MenuItem menuItemDefault = new MenuItem("Default");
+            MenuItem menuItemVR = new MenuItem("VR");
+            MenuItem menuItemQuit = new MenuItem("Quit");
+
+            menuItemDefault.Click += MenuItemDefault_Click;
+            menuItemVR.Click += MenuItemVR_Click;
+            menuItemQuit.Click += MenuItemQuit_Click;
+
+            contextMenu.MenuItems.Add(menuItemDefault);
+            contextMenu.MenuItems.Add(menuItemVR);
+            contextMenu.MenuItems.Add(menuItemQuit);
+
+
+            notifyIcon1.ContextMenu = contextMenu;
+
             if (startUp)
             {
                 WindowState = FormWindowState.Minimized;
                 notifyIcon1.Visible = true;
                 showForm = false;
             }
+        }
+
+        private void MenuItemQuit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void MenuItemVR_Click(object sender, EventArgs e)
+        {
+            switchVR();
+        }
+
+        private void MenuItemDefault_Click(object sender, EventArgs e)
+        {
+            switchDefault();
         }
 
         private void keyBind_KeyDown(object sender, KeyEventArgs e)
