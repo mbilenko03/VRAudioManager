@@ -60,7 +60,6 @@ Manual switching is fairly easy to do.
 <h2>Upcoming Features</h2>
 <h4>In order of priority:</h4>
 <ul>
-<li>Easy way to add services by the location of the exe file</li>
 <li>Hotkeys for toggling settings</li>
 </ul>
 <hr>
