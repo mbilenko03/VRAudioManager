@@ -60,6 +60,7 @@ Manual switching is fairly easy to do.
 <h2>Upcoming Features</h2>
 <h4>In order of priority:</h4>
 <ul>
+<li>Context menu for tray app</li>
 <li>Hotkeys for toggling settings</li>
 </ul>
 <hr>
