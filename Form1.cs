@@ -1,5 +1,6 @@
 ﻿using IWshRuntimeLibrary;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
@@ -151,6 +152,37 @@ namespace VRAudioManager
             //shortcut.IconLocation = @"c:\myicon.ico";           // The icon of the shortcut
             shortcut.TargetPath = targetFileLocation;                 // The path of the file that will launch when the shortcut is run
             shortcut.Save();                                    // Save the shortcut
+        }
+
+        private void browseFiles_Click(object sender, EventArgs e)
+        {
+            // Create OpenFileDialog 
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+
+            // Set filter for file extension and default file extension 
+            dlg.DefaultExt = ".exe";
+            dlg.Filter = "Executable (*.exe) | *.exe";
+
+
+            // Display OpenFileDialog by calling ShowDialog method 
+            bool? result = dlg.ShowDialog();
+
+
+            // Get the selected file name and display in a TextBox 
+            if (result == true)
+            {
+                string fileName = dlg.FileName;
+                string[] fileParam = fileName.Split('\\');
+
+                int lastElem = fileParam.Length - 1;
+
+                fileName = fileParam[lastElem];
+
+                fileParam = fileName.Split('.');
+                fileName = fileParam[0];
+
+                richTextBox1.AppendText($"\n{fileName}");
+            }
         }
     }
 }

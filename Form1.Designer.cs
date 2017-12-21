@@ -54,6 +54,8 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.startUp = new System.Windows.Forms.CheckBox();
+            this.browseFiles = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -312,11 +314,26 @@
             this.startUp.UseVisualStyleBackColor = true;
             this.startUp.CheckedChanged += new System.EventHandler(this.startUp_CheckedChanged);
             // 
+            // browseFiles
+            // 
+            this.browseFiles.Location = new System.Drawing.Point(476, 373);
+            this.browseFiles.Name = "browseFiles";
+            this.browseFiles.Size = new System.Drawing.Size(75, 23);
+            this.browseFiles.TabIndex = 13;
+            this.browseFiles.Text = "Add Service";
+            this.browseFiles.UseVisualStyleBackColor = true;
+            this.browseFiles.Click += new System.EventHandler(this.browseFiles_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 434);
+            this.Controls.Add(this.browseFiles);
             this.Controls.Add(this.startUp);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.tableLayoutPanel3);
@@ -370,5 +387,7 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.CheckBox startUp;
+        private System.Windows.Forms.Button browseFiles;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
